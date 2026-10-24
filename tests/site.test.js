@@ -43,9 +43,9 @@ test("no inline event handlers", () => {
   assert.doesNotMatch(html(), /\son[a-z]+\s*=\s*"/i);
 });
 
-test("work section lists nine rows with known categories", () => {
+test("work section lists ten rows with known categories", () => {
   const rows = html().match(/<li class="work__row" data-cat="[a-z]+">/g) || [];
-  assert.strictEqual(rows.length, 9);
+  assert.strictEqual(rows.length, 10);
   for (const row of rows) {
     const cat = row.match(/data-cat="([a-z]+)"/)[1];
     assert.ok(CATS.includes(cat), `unknown category ${cat}`);
@@ -121,7 +121,7 @@ test("script.js parses as valid JavaScript", () => {
 test("external work links point at repositories that actually exist", () => {
   const page = html();
   const links = [...page.matchAll(/href="(https:\/\/ahnafmohsieu\.github\.io\/[^"]+)"/g)].map((m) => m[1]);
-  assert.ok(links.length >= 3, "expected three deployed app links");
+  assert.ok(links.length >= 4, "expected at least four deployed links");
   for (const link of links) {
     assert.match(link, /^https:\/\/ahnafmohsieu\.github\.io\/[A-Za-z0-9-]+\/$/);
   }
