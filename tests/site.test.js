@@ -123,6 +123,6 @@ test("external work links point at repositories that actually exist", () => {
   const links = [...page.matchAll(/href="(https:\/\/ahnafmohsieu\.github\.io\/[^"]+)"/g)].map((m) => m[1]);
   assert.ok(links.length >= 4, "expected at least four deployed links");
   for (const link of links) {
-    assert.match(link, /^https:\/\/ahnafmohsieu\.github\.io\/[A-Za-z0-9-]+\/$/);
+    assert.match(link, /^https:\/\/ahnafmohsieu\.github\.io\/[A-Za-z0-9-]+(\/[A-Za-z0-9-]+)*\/$/);
   }
 });

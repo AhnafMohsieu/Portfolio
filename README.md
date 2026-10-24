@@ -32,7 +32,8 @@ the site; no build step runs.
 
 ## Known limitations
 
-- NoriBD and Bangu Bhozon are WordPress builds whose staging hosts have expired.
-  Their rows carry no link rather than a broken one; the export archives are
-  available on request.
+- The three WordPress storefronts are published as static archives under
+  [Websites](https://ahnafmohsieu.github.io/Websites/), captured from the
+  running installs. Every page, product, and image is browsable; cart and
+  checkout cannot work because static hosting cannot run PHP or MySQL.
 - The four papers are manuscripts prepared for submission, not published work.
