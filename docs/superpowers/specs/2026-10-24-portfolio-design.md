@@ -193,3 +193,20 @@ These were decided to keep the work moving and can be reversed at any time:
 - Iron Build included, unlinked.
 - Repository remains private; no deployment until the owner makes it public.
 - All four PDFs hosted in the repository rather than "on request".
+
+## 12. Implementation deviations (2026-10-24)
+
+Recorded after the build, so the document does not describe a site that does not
+exist:
+
+- **Ten works, not nine.** Cafe Neptune was added once the websites work began;
+  the three WordPress builds are now entries 01–03.
+- **Iron Build is linked, not unlinked.** Its repository was made public and a
+  Pages site was created, so `ahnafmohsieu.github.io/Iron-Build/` resolves.
+- **The simulator slug was wrong in the source demo.** The live URL is
+  `Clash-of-Clans-Exp-Simulator`, not `Clash-of-Clans-XP-Simulator`.
+- **NoriBD and Bangu Bhozon link to a case study, not a shop.** Their Pantheon
+  staging hosts return 404 and are unrecoverable, so both point at
+  `ahnafmohsieu.github.io/Websites/` rather than at a dead URL.
+- **The repository is public and deployed.** Pages serves the site from `main`.
+
