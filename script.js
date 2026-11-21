@@ -9,25 +9,32 @@
 
   var cats = chips.map(function (chip) { return chip.dataset.cat; });
 
-  function apply(cat) {
+  function apply(cat, updateHash) {
     chips.forEach(function (chip) {
       chip.setAttribute("aria-pressed", String(chip.dataset.cat === cat));
     });
     rows.forEach(function (row) {
       row.classList.toggle("is-hidden", cat !== "all" && row.dataset.cat !== cat);
     });
-    var hash = cat === "all" ? "#work" : "#work-" + cat;
-    if (location.hash !== hash) {
-      history.replaceState(null, "", hash);
+    if (updateHash) {
+      var hash = cat === "all" ? "#work" : "#work-" + cat;
+      if (location.hash !== hash) {
+        history.replaceState(null, "", hash);
+      }
     }
   }
 
   chips.forEach(function (chip) {
-    chip.addEventListener("click", function () { apply(chip.dataset.cat); });
+    chip.addEventListener("click", function () { apply(chip.dataset.cat, true); });
   });
 
-  var fromHash = (location.hash || "").replace(/^#work-/, "");
-  apply(cats.indexOf(fromHash) > -1 ? fromHash : "all");
+  var hashMatch = (location.hash || "");
+  if (hashMatch.indexOf("#work") === 0) {
+    var fromHash = hashMatch.replace(/^#work-/, "").replace(/^#work$/, "all");
+    apply(cats.indexOf(fromHash) > -1 ? fromHash : "all", false);
+  } else {
+    apply("all", false);
+  }
 
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
