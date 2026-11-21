@@ -1,0 +1,49 @@
+name: Test Suite & Live Endpoint Healthcheck
+
+on:
+  push:
+    branches: [ main, 'feat/*' ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run every Monday at midnight UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run local portfolio test suite
+        run: node --test tests/site.test.js
+
+      - name: Ping live GitHub Pages endpoints
+        run: |
+          urls=(
+            "https://ahnafmohsieu.github.io/Portfolio/"
+            "https://ahnafmohsieu.github.io/Websites/"
+            "https://ahnafmohsieu.github.io/Websites/nori/"
+            "https://ahnafmohsieu.github.io/Websites/bangubhozon/"
+            "https://ahnafmohsieu.github.io/Websites/cafe-neptune/"
+            "https://ahnafmohsieu.github.io/Ibadah-Quest/"
+            "https://ahnafmohsieu.github.io/Iron-Build/"
+            "https://ahnafmohsieu.github.io/Clash-of-Clans-Exp-Simulator/"
+            "https://ahnafmohsieu.github.io/CV/"
+          )
+          for url in "${urls[@]}"; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            echo "Checking $url -> HTTP $status"
+            if [ "$status" != "200" ]; then
+              echo "Error: $url returned HTTP $status instead of 200"
+              exit 1
+            fi
+          done
+          echo "All 9 live endpoints healthy!"
