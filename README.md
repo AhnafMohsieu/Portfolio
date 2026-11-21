@@ -3,6 +3,19 @@
 Single-page portfolio for Md. Mahin Ahmed — WordPress e-commerce builds,
 offline-first browser apps, and research manuscripts.
 
+<p align="center">
+  <a href="https://ahnafmohsieu.github.io/Portfolio/">
+    <img src="docs/screenshots/desktop.png" alt="Portfolio page listing web builds, apps, and research" width="100%">
+  </a>
+</p>
+
+<details>
+  <summary>Mobile view</summary>
+  <p align="center">
+    <img src="docs/screenshots/mobile.png" alt="Portfolio on mobile" width="320">
+  </p>
+</details>
+
 Live site: https://ahnafmohsieu.github.io/Portfolio/
 
 ## Editing
@@ -37,3 +50,9 @@ the site; no build step runs.
   running installs. Every page, product, and image is browsable; cart and
   checkout cannot work because static hosting cannot run PHP or MySQL.
 - The four papers are manuscripts prepared for submission, not published work.
+
+
+## License
+
+All rights reserved. See [LICENSE](LICENSE). The code and content are published
+for viewing and evaluation only.
