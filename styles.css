@@ -101,6 +101,35 @@ h2{font-family:var(--serif);font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.1;
   .contact li{grid-template-columns:1fr;gap:2px}
 }
 
+/* Cards Grid for Apps & Websites */
+.grid--cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:24px}
+.card{background:transparent;border:1px solid var(--hairline);padding:24px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color 140ms ease}
+.card:hover{border-color:var(--muted)}
+.card__header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;gap:12px}
+.card__title{font-family:var(--serif);font-size:1.25rem;font-weight:600;margin:0;line-height:1.25}
+.badge{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;border-radius:999px;white-space:nowrap}
+.card__desc{color:var(--muted);font-size:.92rem;margin:0 0 16px;line-height:1.55}
+.card__meta{font-size:.82rem;color:var(--muted);margin-bottom:16px}
+.card__links{display:flex;gap:16px;font-size:.86rem;flex-wrap:wrap}
+
+/* Notice banner for static web archives */
+.notice-box{border-left:3px solid var(--accent);background:rgba(154,59,38,.05);padding:14px 18px;margin-bottom:24px;font-size:.88rem;color:var(--muted)}
+.notice-box strong{color:var(--ink)}
+
+/* Finance report list items */
+.report-row{display:grid;grid-template-columns:3rem minmax(0,1fr) 12rem;gap:24px;padding:24px 0;border-bottom:1px solid var(--hairline)}
+.report-row:last-child{border-bottom:0}
+.report-row__num{font-family:var(--serif);font-size:.95rem;color:var(--accent);padding-top:4px}
+.report-row__title{font-family:var(--serif);font-size:1.2rem;font-weight:600;margin:0 0 6px;line-height:1.3}
+.report-row__desc{color:var(--muted);font-size:.9rem;margin:0 0 8px;max-width:62ch}
+.report-row__meta{font-size:.82rem;color:var(--muted);margin:0}
+.report-row__action{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;font-size:.86rem;gap:6px}
+
+@media (max-width:720px){
+  .report-row{grid-template-columns:2.25rem minmax(0,1fr);gap:16px}
+  .report-row__action{grid-column:2}
+}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{transition:none !important;animation:none !important}
