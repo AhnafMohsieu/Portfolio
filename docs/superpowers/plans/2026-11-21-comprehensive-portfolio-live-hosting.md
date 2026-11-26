@@ -192,7 +192,7 @@ Update `<nav class="site-nav">`:
 In `.hero .actions`:
 ```html
 <div class="actions">
-  <a class="btn btn--solid" href="mailto:mahinahmed923@gmail.com?subject=Hello%20from%20your%20portfolio">Email me</a>
+  <a class="btn btn--solid" href="mailto:published on the live page only?subject=Hello%20from%20your%20portfolio">Email me</a>
   <a class="btn" href="https://ahnafmohsieu.github.io/CV/">View CV</a>
   <a class="btn" href="https://github.com/AhnafMohsieu">GitHub</a>
 </div>

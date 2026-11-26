@@ -76,7 +76,7 @@ journal and key finding) that a list row cannot hold.
 
 - Name: Md. Mahin Ahmed
 - Role line: Developer & Researcher
-- Email: mahinahmed923@gmail.com
+- Email: published on the live page only
 - GitHub: https://github.com/AhnafMohsieu
 - Location: Dhaka, Bangladesh
 - Institution: United International University

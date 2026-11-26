@@ -124,7 +124,7 @@ Expected: FAIL — `ENOENT: no such file or directory, open '...index.html'`
     <h1 id="hero-title">Md. Mahin Ahmed</h1>
     <p class="lede">Developer and researcher. I build WordPress e-commerce for Bangladeshi payment methods, offline-first browser apps, and reproducible research on retrieval and finance.</p>
     <div class="actions">
-      <a class="btn btn--solid" href="mailto:mahinahmed923@gmail.com?subject=Hello%20from%20your%20portfolio">Email me</a>
+      <a class="btn btn--solid" href="mailto:published on the live page only?subject=Hello%20from%20your%20portfolio">Email me</a>
       <a class="btn" href="https://github.com/AhnafMohsieu">GitHub</a>
     </div>
   </section>
@@ -455,7 +455,7 @@ test("about and contact sections exist with real destinations", () => {
   const page = html();
   assert.match(page, /id="about"/);
   assert.match(page, /id="contact"/);
-  assert.match(page, /mailto:mahinahmed923@gmail\.com/);
+  assert.match(page, /mailto:published on the live page only/);
   assert.match(page, /https:\/\/github\.com\/AhnafMohsieu/);
 });
 
@@ -527,7 +527,7 @@ Expected: FAIL — `papers.length` is 0.
       <p class="lede">Open to internships, freelance e-commerce builds, and research collaboration.</p>
     </div>
     <ul class="contact">
-      <li><span class="contact__label">Email</span><a href="mailto:mahinahmed923@gmail.com">mahinahmed923@gmail.com</a></li>
+      <li><span class="contact__label">Email</span><a href="mailto:published on the live page only">published on the live page only</a></li>
       <li><span class="contact__label">GitHub</span><a href="https://github.com/AhnafMohsieu">github.com/AhnafMohsieu</a></li>
       <li><span class="contact__label">Location</span>Dhaka, Bangladesh</li>
       <li><span class="contact__label">Institution</span>United International University</li>
