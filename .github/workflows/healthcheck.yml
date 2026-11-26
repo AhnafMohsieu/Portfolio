@@ -36,7 +36,7 @@ jobs:
             "https://ahnafmohsieu.github.io/Ibadah-Quest/"
             "https://ahnafmohsieu.github.io/Iron-Build/"
             "https://ahnafmohsieu.github.io/Clash-of-Clans-Exp-Simulator/"
-            "https://ahnafmohsieu.github.io/CV/"
+            "https://ahnafmohsieu.github.io/Portfolio/cv/"
           )
           for url in "${urls[@]}"; do
             status=$(curl -s -o /dev/null -w "%{http_code}" "$url")
