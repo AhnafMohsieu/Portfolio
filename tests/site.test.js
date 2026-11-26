@@ -104,7 +104,17 @@ test("about and contact sections exist with real destinations", () => {
   assert.match(page, /id="contact"/);
   assert.match(page, /mailto:mahinahmed923@gmail\.com/);
   assert.match(page, /https:\/\/github\.com\/AhnafMohsieu/);
-  assert.match(page, /https:\/\/ahnafmohsieu\.github\.io\/CV\//);
+  assert.match(page, /href="cv\/"/);
+});
+
+test("CV viewer and both CV editions live inside the portfolio", () => {
+  const page = html();
+  assert.match(page, /href="cv\/"/);
+  for (const file of ["index.html", "Mahin_Ahmed_General_CV.pdf", "Mahin_Ahmed_Banking_CV.pdf"]) {
+    const p = path.join(ROOT, "cv", file);
+    assert.ok(fs.existsSync(p), `missing ${p}`);
+    assert.ok(fs.statSync(p).size > 1000, `${p} looks truncated`);
+  }
 });
 
 test("footer year has a static fallback for JavaScript-off readers", () => {

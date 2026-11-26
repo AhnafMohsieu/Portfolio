@@ -18,6 +18,12 @@ offline-first browser apps, and research manuscripts.
 
 Live site: https://ahnafmohsieu.github.io/Portfolio/
 
+## Curriculum Vitae
+
+Two editions — general and banking — live in `cv/`, next to a small viewer at
+`cv/index.html` that tabs between them and links to the raw PDFs. No build step.
+The CV is part of this repository rather than a separate project.
+
 ## Editing
 
 Everything a visitor reads lives in `index.html`, written by hand. To change a
