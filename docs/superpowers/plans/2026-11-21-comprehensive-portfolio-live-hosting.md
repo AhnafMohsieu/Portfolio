@@ -183,7 +183,7 @@ Update `<nav class="site-nav">`:
     <li><a href="#websites">Sites</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#finance">Finance</a></li>
-    <li><a href="https://ahnafmohsieu.github.io/CV/">CV</a></li>
+    <li><a href="https://ahnafmohsieu.github.io/Portfolio/cv/">CV</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -193,7 +193,7 @@ In `.hero .actions`:
 ```html
 <div class="actions">
   <a class="btn btn--solid" href="mailto:published on the live page only?subject=Hello%20from%20your%20portfolio">Email me</a>
-  <a class="btn" href="https://ahnafmohsieu.github.io/CV/">View CV</a>
+  <a class="btn" href="https://ahnafmohsieu.github.io/Portfolio/cv/">View CV</a>
   <a class="btn" href="https://github.com/AhnafMohsieu">GitHub</a>
 </div>
 ```
@@ -293,7 +293,7 @@ Modify:
 3. Add `REPORT_SLUGS`: Array of the 10 report slugs.
 4. Update `papers.length`: Assert 5.
 5. Add test for reports: Assert 10 report items with valid non-trivial files in `assets/reports/`.
-6. Assert CV link `https://ahnafmohsieu.github.io/CV/` exists.
+6. Assert CV link `https://ahnafmohsieu.github.io/Portfolio/cv/` exists.
 7. Maintain strict anti-hallucination constraint: no manuscript or report called "published".
 
 - [ ] **Step 2: Run test suite**
@@ -363,7 +363,7 @@ jobs:
             "https://ahnafmohsieu.github.io/Ibadah-Quest/"
             "https://ahnafmohsieu.github.io/Iron-Build/"
             "https://ahnafmohsieu.github.io/Clash-of-Clans-Exp-Simulator/"
-            "https://ahnafmohsieu.github.io/CV/"
+            "https://ahnafmohsieu.github.io/Portfolio/cv/"
           )
           for url in "${urls[@]}"; do
             status=$(curl -s -o /dev/null -w "%{http_code}" "$url")

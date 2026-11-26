@@ -40,7 +40,7 @@ All projects are hosted entirely on GitHub Pages under the `AhnafMohsieu` organi
 | **Ibadah Quest** | PWA Tracker | `AhnafMohsieu/Ibadah-Quest` | `https://ahnafmohsieu.github.io/Ibadah-Quest/` |
 | **Iron Build** | PWA Workout App | `AhnafMohsieu/Iron-Build` | `https://ahnafmohsieu.github.io/Iron-Build/` |
 | **CoC XP Simulator** | Interactive Tool | `AhnafMohsieu/Clash-of-Clans-Exp-Simulator` | `https://ahnafmohsieu.github.io/Clash-of-Clans-Exp-Simulator/` |
-| **Curriculum Vitae** | Live CV Viewer | `AhnafMohsieu/CV` | `https://ahnafmohsieu.github.io/CV/` |
+| **Curriculum Vitae** | Live CV Viewer | `AhnafMohsieu/Portfolio/tree/main/cv` | `https://ahnafmohsieu.github.io/Portfolio/cv/` |
 
 ---
 
@@ -81,14 +81,14 @@ Single-page layout, structured into clear semantic landmarks:
    - `Websites` (`https://ahnafmohsieu.github.io/Websites/`)
    - `Research` (`#research`)
    - `Finance` (`#finance`)
-   - `CV` (`https://ahnafmohsieu.github.io/CV/`)
+   - `CV` (`https://ahnafmohsieu.github.io/Portfolio/cv/`)
    - `Contact` (`#contact`)
 
 2. **Hero Section (`#top`)**:
    - Eyebrow: `Dhaka, Bangladesh · United International University`
    - Title: `Md. Mahin Ahmed`
    - Lede: *Developer and researcher. I build offline-first browser apps, WordPress e-commerce for Bangladeshi payment gateways, and reproducible empirical research across finance and retrieval.*
-   - CTAs: `Email me` (`mailto`), `View CV` (`https://ahnafmohsieu.github.io/CV/`), `GitHub` (`https://github.com/AhnafMohsieu`).
+   - CTAs: `Email me` (`mailto`), `View CV` (`https://ahnafmohsieu.github.io/Portfolio/cv/`), `GitHub` (`https://github.com/AhnafMohsieu`).
 
 3. **Section 01 — Selected Work (`#work`)**:
    - Filter Chips: `All`, `Web`, `App`, `Tool`, `Research`, `Finance`.
