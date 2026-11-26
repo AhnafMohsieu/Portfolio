@@ -1,5 +1,9 @@
 # Portfolio
 
+[![Live site](https://img.shields.io/badge/live-view-0e5a6b?style=flat-square)](https://ahnafmohsieu.github.io/Portfolio/) [![License](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey?style=flat-square)](LICENSE)
+
+> ← [All projects](https://ahnafmohsieu.github.io/Portfolio/hub/)
+
 Single-page portfolio for Md. Mahin Ahmed — WordPress e-commerce builds,
 offline-first browser apps, and research manuscripts.
 
