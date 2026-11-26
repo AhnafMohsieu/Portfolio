@@ -24,6 +24,12 @@ Two editions — general and banking — live in `cv/`, next to a small viewer a
 `cv/index.html` that tabs between them and links to the raw PDFs. No build step.
 The CV is part of this repository rather than a separate project.
 
+## Project hub
+
+The account-root landing page is preserved in `hub/` (`index.html` and
+`styles.css`), served at `/Portfolio/hub/`. The former profile README text is
+kept in `docs/profile-readme.md`. Both are plain static files.
+
 ## Editing
 
 Everything a visitor reads lives in `index.html`, written by hand. To change a
